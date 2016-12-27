@@ -14,7 +14,8 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_centerVertical="true"
-        android:layout_centerHorizontal="true">
+        android:layout_centerHorizontal="true"
+        android:paddingTop="20dp">
 
         <Button
             style="?android:attr/buttonStyleSmall"
@@ -24,46 +25,32 @@
             android:id="@+id/bHelp"
             android:layout_gravity="right" />
 
-        <EditText
-            android:layout_width="match_parent"
+        <TextView
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:inputType="textMultiLine"
-            android:ems="10"
-            android:id="@+id/editText2"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Welcome to Party Planner!\nLet us quickly set up your account\nPlease provide your phone number"
+            android:id="@+id/tvHomeScreen"
             android:layout_gravity="center_horizontal"
-            android:lines="2"
-            android:maxLines="3" />
+            android:inputType="textMultiLine"
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textAppearance="?android:attr/textAppearanceLarge"
-            android:text="Welcome to Party Planner!"
-            android:id="@+id/tvWelcomeLabel"
-            android:layout_gravity="center_horizontal" />
+            android:textAlignment="center" />
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textAppearance="?android:attr/textAppearanceLarge"
-            android:text="Let us quickly set up your account"
-            android:id="@+id/tvSetUpLabel"
-            android:layout_gravity="center_horizontal" />
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textAppearance="?android:attr/textAppearanceLarge"
-            android:text="Please provide your phone number"
-            android:id="@+id/tvPhoneNumberLabel"
-            android:layout_gravity="center_horizontal" />
 
         <EditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:inputType="phone"
             android:ems="10"
-            android:id="@+id/editText"
+            android:id="@+id/etPhone"
             android:layout_gravity="center_horizontal" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Get Pin"
+            android:id="@+id/bGetVerificationPin"
+            android:layout_gravity="center_horizontal" />
+
     </LinearLayout>
 </RelativeLayout>
